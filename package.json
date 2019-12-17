@@ -1,11 +1,11 @@
 {
-  "name": "vue-scroll-lock",
+  "name": "v-scroll-sync",
   "version": "1.0.0",
   "description": "Vue directive for keeping scrolling in sync between elements",
   "author": "Kevin Hamer <kevin@imarc.com> (http://www.imarc.com/)",
-  "repository": "github:imarc/vue-scroll-lock",
-  "files": ["dist/vue-scroll-lock.js"],
-  "main": "dist/vue-scroll-lock.js",
+  "repository": "github:imarc/v-scroll-sync",
+  "files": ["dist/v-scroll-sync.js"],
+  "main": "dist/v-scroll-sync.js",
   "license": "Apache-2.0",
   "devDependencies": {
     "@babel/core": "^7.7.5",
@@ -16,7 +16,7 @@
     "vue": "^2.6"
   },
   "scripts": {
-      "build": "parcel build vue-scroll-lock.js --bundle-node-modules",
+      "build": "parcel build v-scroll-sync.js --bundle-node-modules",
       "prepare": "npm run build"
   }
 }

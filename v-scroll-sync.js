@@ -1,19 +1,19 @@
 /**
- * Vue plugin that adds the directive v-scroll-lock.
+ * Vue plugin that adds the directive v-scroll-sync.
  *
- *     <div v-scroll-lock>
+ *     <div v-scroll-sync>
  *
- * v-scroll-lock optionally lets you specify a group the elements to scroll
+ * v-scroll-sync optionally lets you specify a group the elements to scroll
  * together. All ungrouped elements are grouped together.
  *
- *     <div v-scroll-lock:group1>
+ *     <div v-scroll-sync:group1>
  *
- * It also supports two modifiers, .x and .y, if you want to only lock
+ * It also supports two modifiers, .x and .y, if you want to only sync
  * scrolling on one of those two axis. It defaults to both.
  *
- *     <div v-scroll-lock:group1.x>
+ *     <div v-scroll-sync:group1.x>
  */
-const VueScrollLock = {
+const VScrollSync = {
     install(Vue, options) {
         const groups = {};
         let isScrolling = false;
@@ -28,7 +28,7 @@ const VueScrollLock = {
             return groups[group];
         };
 
-        const scrollLock = {
+        const scrollSync = {
 
             bind(el, {
                 arg: group,
@@ -71,8 +71,8 @@ const VueScrollLock = {
             },
         };
 
-        Vue.directive('scroll-lock', scrollLock);
+        Vue.directive('scroll-sync', scrollSync);
     },
 };
 
-export default VueScrollLock;
+export default VScrollSync;
