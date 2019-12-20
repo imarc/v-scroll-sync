@@ -1,6 +1,6 @@
 {
   "name": "v-scroll-sync",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Vue directive for keeping scrolling in sync between elements",
   "author": "Kevin Hamer <kevin@imarc.com> (http://www.imarc.com/)",
   "repository": "github:imarc/v-scroll-sync",
