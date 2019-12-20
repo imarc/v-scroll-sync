@@ -4,19 +4,22 @@
   "description": "Vue directive for keeping scrolling in sync between elements",
   "author": "Kevin Hamer <kevin@imarc.com> (http://www.imarc.com/)",
   "repository": "github:imarc/v-scroll-sync",
-  "files": ["dist/v-scroll-sync.js"],
+  "files": [
+    "dist/v-scroll-sync.js"
+  ],
   "main": "dist/v-scroll-sync.js",
   "license": "Apache-2.0",
   "devDependencies": {
+    "@babel/cli": "^7.7.7",
     "@babel/core": "^7.7.5",
-    "babel-types": "^6.26.0",
-    "parcel": "^1.12.4"
+    "@babel/preset-env": "^7.7.7"
   },
   "peerDependencies": {
     "vue": "^2.6"
   },
   "scripts": {
-      "build": "parcel build v-scroll-sync.js --bundle-node-modules",
-      "prepare": "npm run build"
-  }
+    "build": "babel v-scroll-sync.js -d dist --compact --minified --no-comments",
+    "prepare": "npm run build"
+  },
+  "dependencies": {}
 }
